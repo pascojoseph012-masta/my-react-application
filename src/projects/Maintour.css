@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.tour-cards{
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    
+    
+}
+.main-tour .image-space{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    
+    
+    
+}
+.main-tour img{
+    width: 110%;
+    object-fit: cover;
+
+}
+.main-tour {
+    padding: 10px;
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.main-tour .place{
+    font-variant:small-caps;
+    font-size: larger;
+    font-weight: 600;
+    width: 4em;
+    height: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C29D59;
+    position: relative;
+    bottom: 16px;
+    right: 30%;
+
+
+
+}
+.main-tour .down-side{
+    border-left: 3px solid #C29D59;
+    height: 40vh;
+    width: 100%;
+    
+}
+.main-tour .title{
+    width: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 10vh;
+    padding: 10px;
+}
+.main-tour .title h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: small-caps;
+    color: rgba(0, 0, 0, 0.863);
+    font-size: large;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    text-align: center;
+    justify-content: center;
+}
+.main-tour .pargraph{
+     width: 60em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 10vh;
+ 
+}
+.main-tour .pargraph p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    text-align: center;
+    justify-content: center;
+}

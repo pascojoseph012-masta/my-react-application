@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containers{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 12000px;
+    height: 100vh;
+    background-color: rgb(5, 5, 5);
+    
+}
+.containers .close-btn{
+    position: absolute;
+    right: 6em;
+    top: 7px;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.containers .close-btn img{
+    width: 40px;
+    cursor: pointer;
+    
+
+}
+
+.search-input input{
+    width: 25em;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+    border-bottom:3px solid white ;
+    outline: none;
+}
+.search-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 16em;
+    top: 30%;
+    
+}
+.back-logos{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    margin-left: 77%;
+    margin-top: 20%;
+    opacity: 0.3;
+
+}
