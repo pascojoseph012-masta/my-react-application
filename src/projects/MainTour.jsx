@@ -1,35 +1,39 @@
 import React, { use, useState } from 'react'
 import './Maintour.css'
 import { TourContent } from '../assets/Tour'
-
+import { Link, Router, Route } from 'react-router-dom'
+import SinglePlace from '../projects/SinglePlace'
+import { div } from 'framer-motion/client';
 const MainTour = () => {
 
-    const [index, setindex] = useState(0)
-    const nexthandle = () =>{
-        setindex((previndex)=>(previndex +1 ) % TourContent.length)
-    }
-
-    const prevhandal = () =>{
-        setindex((prevhandal)=>(prevhandal === 0 ? TourContent.length -1 :prevhandal-1))
-    }
-
-    const object = TourContent[index] 
 
   return (
-    <div>
-        <div className="tour-cards">
+    
+   <div>
+<div className="main-tour">
 
-        <div className="main-tour">
-            <div className="image-space"><img src={object.image} alt="image" /></div>
-            <div className="place"><h1>{object.place}</h1></div>
-            <div className="down-side">
-            <div className="title"><h1>{object.title}</h1></div>
-            <div className="pargraph"><p>{object.description}</p></div>
-            <div className="duration"><p><img src="" alt="" />{object.duration}</p> <h1>{object.groupsize}</h1></div>
-            </div>
-        </div>
-        </div>
+            {TourContent.map((TourContent)=>{
+              
+return <div> 
+            
+            <img src={TourContent.image} alt="image" />
+      <div className="downword">
+        <h1>{TourContent.place}</h1>
+        <h2>{TourContent.title}</h2>
+        <h3>{TourContent.description}</h3>
+        <div className="grid-sec"> <div className="duration_icon"> <img src={TourContent.duration_icon} alt="" /> <p>{TourContent.duration}</p></div> 
+          <div className="group_icon"> <img src={TourContent.groupsize_icon} /> <p>{TourContent.groupsize}</p></div></div>
+        <div className="grid-sec2"><p>{TourContent.price}</p> <Link to={`/TourContent/${TourContent.id}`}>BOOK NOW</Link></div>
+      </div>
     </div>
+    })}
+      
+</div>
+
+    
+
+</div>
+    
   )
 }
 

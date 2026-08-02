@@ -440,7 +440,7 @@ p::after{
     
 }
 .raid-grid-card .box .card-image1 button:hover{
-    transition: all 0.1000 ease;
+     transition: all 300ms ease-in;
     transform: translateY(-5px);
     background-color: #C29D59;
     color: white;
@@ -453,7 +453,7 @@ p::after{
 }
 .raid-grid-card .box img:hover{
     transform: scale(1.04);
-    transition: all 1.1s ease;
+     transition: all 300ms ease-in;
 
 }
 .raid-grid-card .box .card-image2 button{
@@ -477,7 +477,7 @@ p::after{
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.774);
 }
 .raid-grid-card .box .card-image2 button:hover{
-    transition: all 0.100s ease;
+     transition: all 300ms ease-in;
     transform: translateY(-5px);
     background-color: #C29D59;
     color: white;
@@ -510,7 +510,7 @@ p::after{
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.774);
 }
 .raid-grid-card .box .card-imge4 button:hover{
-    transition: all 0.100s ease;
+     transition: all 300ms ease-in;
     transform: translateY(-5px);
     background-color: #C29D59;
     color: white;
@@ -544,7 +544,7 @@ p::after{
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.774);
 }
 .raid-grid-card .box .grid-image3 button:hover{
-    transition: all 0.1000s ease;
+     transition: all 300ms ease-in;
     transform: translateY(-5px);
     background-color: #C29D59;
     color: white;
@@ -582,7 +582,7 @@ p::after{
     height: 8vh;
 }
 .raid-container .veiw:hover{
-     transition: all 0.1000s ease;
+     transition: all 300ms ease-in;
     transform: translateY(-5px);
     background-color: rgba(0, 0, 0, 0.842);
     color: rgba(253, 252, 252, 0.945);

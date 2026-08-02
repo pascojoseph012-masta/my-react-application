@@ -4,98 +4,118 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-.tour-cards{
-    width: 100%;
-    height: 90vh;
-    padding: 20px;
     
-    
-}
-.main-tour .image-space{
-    width: 100%;
-    height: 45vh;
-    display: flex;
-    
-    
-    
-}
 .main-tour img{
-    width: 110%;
+    width: 50em;
+    height: 40vh;
     object-fit: cover;
 
 }
-.main-tour {
-    padding: 10px;
-    width: 30%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
+.main-tour{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 20px;
     align-items: center;
-    
-
-}
-.main-tour .place{
-    font-variant:small-caps;
-    font-size: larger;
-    font-weight: 600;
-    width: 4em;
-    height: 5vh;
-    color: white;
-    display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    background-color: #C29D59;
-    position: relative;
-    bottom: 16px;
-    right: 30%;
-
-
-
 }
-.main-tour .down-side{
-    border-left: 3px solid #C29D59;
-    height: 40vh;
+.downword{
     width: 100%;
+    height: 46vh;
+    border-left: 3px solid #C29D59;
+    box-shadow: 0px 0px 8px 0px black;
+
+}
+.downword h1{
+    font-weight: 600;
+    background: #C29D59;
+    color: white;
+    width: 10em;
+    padding: 9px;
+    box-shadow: 0px 0px 2px 0px black;
+    position: relative;
+    bottom: 20px;
+    left: 2em;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: large;
+
+}
+.downword h2{
+    font-size: 17px;
+    margin-left: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.downword h3{
+    margin: auto 10px;
+    width: 19em;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 600;
+    text-align:left;
+}
+.downword .grid-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: smaller;
+    font-variant: small-caps;
+    width: 90%;
+    gap: 5em;
+    margin: 15px;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.2px solid rgb(194, 194, 194);
+    border-bottom: 0.2px solid rgb(194, 194, 194);
+}
+.downword .grid-sec .duration_icon img{
+    width: 1.3em;
+    height: 1.3em;
+}
+.downword .grid-sec .duration_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+   
+}
+.downword .grid-sec .group_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}   
+.downword .grid-sec .group_icon img{
+    width: 1.3em;
+    height: 1.3em;
+}
+.downword .grid-sec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 3em;
     
 }
-.main-tour .title{
-    width: 30em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 10vh;
-    padding: 10px;
+.downword .grid-sec2 a{
+    padding:15px 40px;
+    background-color: #C29D59;
+    color: white;
+    margin: 20px auto;
+    border-radius: 5px;
 }
-.main-tour .title h1{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.downword .grid-sec2 a:hover{
+    background-color: rgba(0, 0, 0, 0.918);
+    transition: all 300ms ease-in;
+}
+.downword .grid-sec2 p{
+    margin-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.692);
     font-variant: small-caps;
-    color: rgba(0, 0, 0, 0.863);
-    font-size: large;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-self: end;
-    text-align: center;
-    justify-content: center;
-}
-.main-tour .pargraph{
-     width: 60em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 10vh;
- 
-}
-.main-tour .pargraph p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgba(0, 0, 0, 0.719);
-    font-size: 15px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-self: end;
-    text-align: center;
-    justify-content: center;
+    font-weight: 700;
 }
