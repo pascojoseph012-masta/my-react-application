@@ -1,11 +1,11 @@
 import { useInstantLayoutTransition } from "framer-motion";
-import Italy from '../assets/10023.jpg'
-import greece from '../assets/10024.jpg'
-import jaiserlame from '../assets/10025.jpg'
-import switzerland from '../assets/10027.jpg'
+import Italy from './10023.jpg'
+import greece from './10024.jpg'
+import jaiserlame from './10025.jpg'
+import switzerland from './10027.jpg'
 import { button } from "framer-motion/client";
-import timer from '../assets/timer.svg'
-import group from '../assets/group.svg'
+import timer from './timer.svg'
+import group from './group.svg'
 
 
 

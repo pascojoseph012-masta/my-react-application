@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './MainContent.css'
+import MainTour from '../projects/MainTour'
+import Nava from "../projects/Nava"
 import kigali from'../assets/kigali.jpg'
 import fimage from '../assets/10015.jpg'
 import simage from '../assets/10014.jpg'
@@ -35,7 +37,7 @@ const InitialObject = InitialContent[index];
     
     <div>
 
-        
+        <Nava/>
           <div className="mySlide">
             <div className="image-buttons">
               <button onClick={()=>buttonhandel()} type="button">Prev</button>
@@ -122,7 +124,7 @@ const InitialObject = InitialContent[index];
             </div>
             <button type="button" className="veiw">Veiw ALL</button>
            </div>
-           
+           <MainTour/>
       </div>
     
   )

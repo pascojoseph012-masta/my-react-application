@@ -4,18 +4,21 @@ import Nava from './projects/Nava';
 import MainContent from './projects/MainContent'
 import Links from './projects/Links'
 import Prompt from './projects/prompt'
-import ProductCard from "./compnent/ProductCard";
 import MainTour from "./projects/MainTour"
+import { TourContent } from "./assets/Tour"
+import About from "./projects/pages/about";
+import TourDetails from "./projects/pages/TourDetails";
+
+
+
 
 
 const App = () => {
  const [popUpOption, setpopUpOption] = useState(false)
  const [search, setsearch] = useState(false)
-
  const OpenSearch = () => {
   console.log('button clicked');
   // setsearch(true)
-  
  }
  
  const popUPOpen = () => {
@@ -27,24 +30,23 @@ const App = () => {
   setpopUpOption(false)
 
  }
- 
+
   return (
     
      <Router>
 
-      
       <Routes>
-        
+      <Route path="/" element={<MainContent/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/TourDetails" element={<TourDetails/>}/>
+      <Route path="/TourContent/:TourContentId" element={<TourDetails/>}/>
+     
       </Routes>
       <div>
-     <Nava popUPOpen={popUPOpen}/>
-      <MainContent/>
       
+     <Nava popUPOpen={popUPOpen}/>
     {popUpOption &&  <Links closePopup={closePopup}/>}
-
     {search && <Prompt  OpenSearch={OpenSearch}/>}
-    <MainTour/>
-
       </div>
      </Router>
     

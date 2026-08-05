@@ -4,12 +4,6 @@ import  './Nav.css'
 import logo from '../assets/10001.png'
 import  bar from '../assets/bar.svg'
 import search from '../assets/search.svg'
- 
-
-
-
-
-
 const Nava = ({popUPOpen,  OpenSearch}) => {
   return (
     <div className='nav-container'>

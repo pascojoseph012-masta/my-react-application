@@ -115,7 +115,8 @@
 .downword .grid-sec2 p{
     margin-left: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.692);
+    color: rgb(0, 0, 0);
     font-variant: small-caps;
     font-weight: 700;
+    font-size: larger;
 }

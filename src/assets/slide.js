@@ -1,6 +1,6 @@
-import fimage from '../assets/10015.jpg'
-import simage from '../assets/10014.jpg'
-import rimage from '../assets/10016.jpg'
+import fimage from './10015.jpg'
+import simage from './10014.jpg'
+import rimage from './10016.jpg'
 
 export const InitialContent =[
 
