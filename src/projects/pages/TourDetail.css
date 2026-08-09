@@ -17,13 +17,479 @@
 }
 .main-Content img{
     width: 100%;
-    height: 80vh;
+    height: 99vh;
     position: absolute;
-    top: 1em;
+    top: 0em;
     object-fit: cover;
     grid-area: stuck;
 }
 .main-Content h1{
+    text-shadow: 2px 2px 5px rebeccapurple;
+    
     grid-area: stuck;
     z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 3em;
+    font-variant: small-caps;
 }
+.more-details{
+    width: 100%;
+    height: 180vh;
+    background-color: rgb(253, 255, 255);
+    display: flex;
+    columns: 2;
+    gap: 5px;
+    
+}
+.place-details{
+ width: 150%;
+ height: 180vh;
+ background-color: rgba(0, 0, 0, 0.253);
+}
+
+.form-grab{
+ width: 100%;
+ height: 180vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.form-grab .form-card{
+    width: 70%;
+    height: 99vh;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 12px 0px black;
+    bottom: 5.2em;
+}
+.form-grab .form-card .inpitA{
+    width: 90%;
+    height: 7vh;
+    border: 1.5px solid #C29D59;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row; 
+    padding: 2px;
+    align-items: center;
+    border-radius: 5px;
+}
+.form-grab .form-card .inpitA img{
+    width: 2em;
+    padding: 2px;
+
+}
+.form-grab .form-card .inpitA input{
+    width: 100%;
+    height: 6vh;
+    padding: 5px;
+    outline: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: 600;
+}
+.form-grab .form-card .inpitA input::placeholder{
+    color: rgba(0, 0, 0, 0.719);
+
+}
+.this-title{
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid #C29D59;
+    margin: 20px;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 1.50rem;
+}
+.this-title p{
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.897);
+}
+.form-grab .form-card textarea{
+    margin: 20px;
+    width: 90%;
+    height: 23vh;
+    border: 2px solid gray;
+    border-radius: 7px;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.747);
+    font-weight: 600;
+}
+.form-grab .form-card textarea::placeholder{
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.form-grab .form-card button{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 14em;
+    border-radius: 7px;
+    height: 7.5vh;
+    background-color: #C29D59;
+    font-variant: small-caps;
+    font-size: 1.16rem;
+    font-weight: 700;
+    color: white;
+
+}
+.form-grab .form-card button:hover{
+    background: rgba(12, 12, 12, 0.938);
+    transition: all 2ms ease;
+    transform: translateY(-5px);
+    color: white;
+    cursor: pointer;
+}
+.form-other-detail{
+    position: absolute;
+    margin-top: 44em;
+    width: 39%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.form-other-detail .why-card{
+    margin: 10px;
+    width: 72%;
+    height: 40vh;
+    background-color: rgba(221, 219, 219, 0.712);
+    box-shadow: 0px 0px 12px -5px black;
+    border-radius: 5px;
+}
+.form-other-detail .why-card .why-title{
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-left: 3.5px solid #C29D59;
+    margin: 20px;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 1.40rem;
+}
+.form-other-detail .why-card .why-title p{
+    padding: 3px;
+    color: black;
+}
+.form-other-detail .why-card .why-details{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.form-other-detail .why-card .why-details li{
+    line-height: 2;
+    list-style:inside;
+    font-weight: 600;
+    font-size: large;
+    font-variant: small-caps;
+    color: rgba(0, 0, 0, 0.747);
+
+}
+.prob-card img{
+    width: 24em;
+    height: 40vh;
+    grid-area: stuck;
+    opacity: 0.200;
+}
+.prob-card{
+    display: grid;
+    grid-template-areas: "stuck";
+    justify-content: center;
+    margin-top: 15em;
+    width: 71%;
+    height: 40vh;
+    background-color: #C29D59;
+    border-radius: 5px;
+}
+.prob-card .prob-detail{
+    grid-area: stuck;
+    
+}
+.prob-card .prob-detail .prob-title{
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-left: 3.5px solid #020202;
+    margin: 20px;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 1.40rem;
+}
+.prob-card .prob-detail .prob-title p{
+    padding: 3px;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+}
+.prob-card .prob-detail .prob-desc{
+    margin: 20px;
+    font-size: 1.10rem;
+    font-weight: lighter;
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 2px 2px 30px black;
+
+}
+.prob-card .prob-detail .prob-email img{
+    width: 30px;
+    height: 50px;
+    opacity: 100;
+   
+
+
+}
+ .prob-card .prob-detail .prob-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    gap: 1em;
+    margin-left: 77px;
+ }
+ .prob-card .prob-detail .prob-email p{
+    font-size: large;
+    color: white;
+    font-weight: 600;
+ }
+
+ .prob-card .prob-detail .prob-phone img{
+    width: 30px;
+    height: 50px;
+    opacity: 100;
+
+
+}
+ .prob-card .prob-detail .prob-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    gap: 3em;
+    margin-left: 39px;
+ }
+ .prob-card .prob-detail .prob-phone p{
+    font-size: large;
+    color: white;
+    font-weight: 600;
+ }
+ footer{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: grid;
+    grid-template-areas: "stuck";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+ }
+ footer img{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.200;
+    position: absolute;
+    
+    
+ }
+ footer .footer-content{
+    grid-area: stuck;
+    z-index: 999;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 10em;
+    row-gap: 4em ;
+    
+    
+ }
+ 
+footer .footer-content .footer-card1{
+    width: 30em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+footer .footer-content .footer-card1 img{
+     width: 330px;
+    height: 10vh;
+    grid-area: stuck;
+    opacity: 100;
+}
+footer .footer-content .footer-card1 .title1{
+   color: rgba(255, 255, 255, 0.836);
+   display: flex;
+   align-items: center;
+   margin-top: 5em;
+    
+}
+footer .footer-content .footer-card1 .title1 span{
+    color: white;
+    font-weight: 700;
+}
+
+footer .footer-content .footer-card1 .input-footer{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+ footer .footer-content .footer-card1 .input-footer input{
+    border: 1px solid rgb(197, 195, 195);
+    border-radius: 5px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    height: 7vh;
+    width: 15em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.137);
+    padding: 10px;
+    color: aliceblue;
+ }
+  footer .footer-content .footer-card1 .input-footer input::placeholder{
+    color: rgba(255, 255, 255, 0.815);
+    
+  }
+ footer .footer-content .footer-card1 .input-footer button{
+    width: 6em;
+    height: 7vh;
+    background-color: #C29D59;
+    color: white;
+    border-radius: 5px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+ }
+ footer .footer-content .footer-card1 .footer-img img{
+    width: 22.2em;
+    height: 7vh;
+    margin-top: 2em;
+    border-radius: 5px;
+ }
+
+
+
+footer .footer-content .footer-card2{
+    width: 30em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-content .footer-card2 .title2{
+    margin: 35px;
+    font-size: xx-large;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: white;
+    width: 10em;
+    height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+}
+footer .footer-content .footer-card2 .lists{
+    margin-left: 10%;
+    color: white;
+    line-height: 2;
+}
+footer .footer-content .footer-card2 .lists li{
+    list-style: square;
+    font-variant: small-caps;
+}
+footer .footer-content .footer-card3{
+    width: 26.9em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-content .footer-card3 .title3{
+    margin: 35px;
+    font-size: xx-large;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: white;
+    width: 10em;
+    height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+}
+footer .footer-content .footer-card3 .colum{
+    margin-left: 2em;
+    height: 7vh;
+    border-left: 3px solid #C29D59;
+    display: flex;
+    flex-direction: column;
+
+}
+footer .footer-content .footer-card3 .colum span{
+    color: rgba(255, 255, 255, 0.712);
+    padding-left: 4px;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+footer .footer-content .footer-card3 .colum h2{
+      color: rgba(255, 255, 255, 0.938);
+    padding-left: 4px;
+    font-weight: 600;
+}
+ footer .footer-content .footer-card4{
+    margin-left:8em ;
+    width: 70em;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 23em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    columns: 2;
+    border-top: 1px solid rgba(255, 255, 255, 0.911);
+
+ }
+ footer .footer-content .footer-card4 h1{
+    color: white;
+ }
+ footer .footer-content .footer-card4 h1 span{
+    color: #C29D59;
+    font: 600;
+    
+ }
+  footer .footer-content .footer-card4 .stach{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+
+  }
+  footer .footer-content .footer-card4 .stach .tach1{
+    color: white;
+    font: 500;
+    font-variant: small-caps;
+    width: 7em;
+    border-right: 1px solid white;
+
+  }
+  footer .footer-content .footer-card4 .stach .tach2{
+    color: white;
+    font: 500;
+    font-variant: small-caps;
+    width: 7em;
+
+  }

@@ -17,6 +17,12 @@ import { area } from 'framer-motion/client';
 import greece from '../assets/10020.jpg'
 import budda from '../assets/10022.jpg'
 import hill from '../assets/10021.jpg'
+import logo from '../assets/10012.png'
+import logoo from '../assets/10013.png'
+import face from '../assets/facebook.svg'
+import instagram from '../assets/instagram.svg'
+import twitter from '../assets/twitter.svg'
+import mapp from '../assets/10039.jpg'
 
 const MainContent = () => {
 const [index, setindex] = useState (0)
@@ -125,6 +131,50 @@ const InitialObject = InitialContent[index];
             <button type="button" className="veiw">Veiw ALL</button>
            </div>
            <MainTour/>
+            <footer>
+        <img src={mapp} alt="mapp" />
+        <div className="footer-content">
+         <div className="footer-card1">
+          <img src={logo} alt="mapp" />
+          <div className="title1"><h4><span>HoliDay Planners</span> sit amet consectetur adipisicing elit. Debitis quae reiciendis temporibus quo ut Lorem ipsum dolor sit amet consectetur, adipisicin </h4></div>
+            <div className="input-footer">
+              <input type="email" name="" placeholder="Enter Your Email" />
+              <button type="button">Submit</button>
+            </div>
+            <div className="footer-img"><img src={logoo} alt="" /></div>
+         </div>
+          <div className="footer-card2">
+            <div className="title2"><h1>navigation</h1></div>
+            <div className="lists">
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Destination</li>
+                <li>Tour</li>
+                <li>Blogs</li>
+                <li>Contact us</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div className="footer-card3">
+            <div className="title3"><h1>need help ?</h1></div>
+            <div className="colum"><span>call us</span><h2>+2507888223635</h2></div><br />
+            <div className="colum"><span>Email for us</span><h2>pascofreeguy@gmail.com</h2></div><br />
+            <div className="colum"><span>Location</span><h2>Rwanda kigali/gikondo</h2></div><br />
+            <div className="colum"><span>Follow us</span></div>
+          </div>
+        <div className="footer-card4">
+        <h1>Copyright@2026 <span>Bigbro code lab</span>. All Right Reserved</h1>
+        <div className="stach">
+          <div className="tach1">Privacy Policy</div>
+          <div className="tach1">Terms Of Use</div>
+          <div className="tach2">Terms Of Use</div>
+        </div>
+        </div>
+      
+        </div>
+      </footer>
       </div>
     
   )
