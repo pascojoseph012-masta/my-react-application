@@ -23,7 +23,14 @@ import face from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import twitter from '../assets/twitter.svg'
 import mapp from '../assets/10039.jpg'
-
+import done from '../assets/10007.svg'
+import phoneB from '../assets/phoneB.svg'
+import smstar from '../assets/smstar.svg'
+import smuserW from '../assets/smuserW.svg'
+import smsunW from '../assets/smsunW.svg'
+import smgroup from '../assets/smgroup.svg'
+import smcamer from '../assets/smcamer.svg'
+import { Content } from '../assets/ContentSilde'
 const MainContent = () => {
 const [index, setindex] = useState (0)
 
@@ -38,6 +45,8 @@ const buttonhandelprev = () =>{
 }
 
 const InitialObject = InitialContent[index];
+const [contentIndex , setcontentIndex] = useState(0)
+const render = Content[contentIndex]; 
  
   return (
     
@@ -131,7 +140,31 @@ const InitialObject = InitialContent[index];
             <button type="button" className="veiw">Veiw ALL</button>
            </div>
            <MainTour/>
-            <footer>
+           <div className="last-section">
+            <div className="stuck-section">
+              <div className="stuck-title">Testimonials</div>
+              <p>Customer <span>Reviews</span></p>
+              <div className="stuck-image"><img src={done} alt="done" /></div>
+            </div>
+            <div className="section-content">
+              <div className="content-title">
+                <img src={render.image} alt="phone" />
+                <img src={render.image} alt="phone" />
+                <img src={render.image} alt="phone" />
+                <img src={render.image} alt="phone" />
+                <img src={render.image} alt="phone" />
+
+              </div>
+              <div className="content-parg">
+                <p>{render.description}</p>
+              </div>
+              <div className="last-title">
+                <h1>{render.name}</h1>
+                <span>{render.span}</span>
+              </div>
+            </div>
+           </div>
+        <footer>
         <img src={mapp} alt="mapp" />
         <div className="footer-content">
          <div className="footer-card1">

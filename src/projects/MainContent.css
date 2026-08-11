@@ -14,13 +14,13 @@
 
 }
 .mySlide p{
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.637);
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.377);
     position: absolute;
     z-index: 1;
     margin: 50px auto;
     top: 30%;
     color: white;
-    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     text-align: center;
     left: 450px;
@@ -68,7 +68,7 @@ p::after{
     justify-content: center;
     animation: fade-up 2;
     transition: all 2s ease-out;
-    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
 
 
 }
@@ -298,7 +298,7 @@ p::after{
     align-items: center;
     justify-content: center;
     color: #C29D59;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     font-size: larger;
 }
@@ -590,4 +590,117 @@ p::after{
     background-color: rgba(0, 0, 0, 0.842);
     color: rgba(253, 252, 252, 0.945);
     cursor: pointer;
+}
+.last-section{
+    margin: 40px auto;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    columns: 2;
+
+}
+.last-section .stuck-section{
+    width: 45%;
+    height: 70vh;
+    background: #C29D59;
+    display: flex;
+    flex-direction: column;display: flex;
+    flex-direction: column;
+
+}
+.last-section .stuck-section .stuck-title{
+    border-left: 3px solid white;
+    width: 10em;
+    height: 5vh;
+    margin-left: 7em;
+    margin-top: 3em;
+    position: relative;
+    bottom: 1em;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.last-section .stuck-section p{
+    color: white;
+    margin-left: 4.5em;
+    margin-top: 8px;
+     font-weight: 500;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+     position: relative;
+    bottom: 20px;
+
+
+}
+.last-section .stuck-section p span{
+    color: white;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+.last-section .stuck-section .stuck-image{
+    width: 76%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-self: right;
+    justify-content: center;
+    
+}
+.last-section .stuck-section .stuck-image img{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
+    justify-content: center;
+    margin-left: 10.2em;
+}
+
+.last-section .section-content{
+    width: 56%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.last-section .section-content .content-title{
+    width: 40%;
+    height: 6vh;
+    margin-top: 9.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 6%;
+    gap: 1rem;
+}
+.last-section .section-content .content-title img{
+    width: 20px;
+}
+.last-section .section-content .content-parg{
+    margin-left: 2em;
+    width: 30rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.801);
+}
+.last-section .section-content .last-title{
+    margin-left: 3em;
+}
+.last-section .section-content .last-title h1{
+    font-size: 2rem;
+    color: #C29D59;
+    opacity: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.last-section .section-content .last-title span{
+    color: gray;
+    font-weight: 600;
 }

@@ -8,6 +8,8 @@ import MainTour from "./projects/MainTour"
 import { TourContent } from "./assets/Tour"
 import About from "./projects/pages/about";
 import TourDetails from "./projects/pages/TourDetails";
+import ToTop from "./projects/pages/ToTop";
+
 
 
 
@@ -34,7 +36,6 @@ const App = () => {
   return (
     
      <Router>
-
       <Routes>
       <Route path="/" element={<MainContent/>}/>
       <Route path="/about" element={<About/>}/>
