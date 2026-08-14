@@ -8,6 +8,7 @@ import face from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import twitter from '../assets/twitter.svg'
 import logos from '../assets/10002.svg'
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 
@@ -18,7 +19,19 @@ const Links = ({closePopup}) => {
   return (
     <div>
 
-        <div className="link-container">
+        <motion.div 
+        
+        initial={{ x: '100%' }} // Start off-screen to the left
+          animate={{ x: 0 }}       // Slide into view
+          exit={{ x: '100%' }}    // Slide back out
+          transition={{ 
+            type: 'tween',         // Disables physics, enables CSS timeline
+            duration: 0.4,         // Animation duration in seconds
+            ease: 'easeInOut'      // Standard CSS easing curve
+          }}
+        
+        
+        className="link-container">
             <div className="left-side">
                 <div className="logo"><img src={logo} alt="logo" /></div>
                 <div className="linkies">
@@ -41,7 +54,7 @@ const Links = ({closePopup}) => {
                     <img src={logos} alt="logos" />
                 </div>
             </div>
-        </div>
+        </motion.div>
 
 
     </div>

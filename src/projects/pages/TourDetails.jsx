@@ -1,6 +1,7 @@
 import React from 'react'
 import './TourDetail.css'
 import { Link, useParams } from 'react-router-dom'
+import {motion, useAnimationControls, useInView} from 'framer-motion'
 import { TourContent } from '../../assets/Tour';
 import map from '../../assets/map.svg'
 import calender from '../../assets/calender.svg'
@@ -24,6 +25,7 @@ import smcamer from '../../assets/smcamer.svg'
 import smlocation from '../../assets/smlocation.svg'
 import sminfo from '../../assets/sminfo.svg'
 import smclock from '../../assets/smclock.svg'
+import drone from '../../assets/drone.mp4'
 
 
 const TourDetails = () => {
@@ -35,49 +37,94 @@ const TourDetails = () => {
     <div className="main-details">
       <div className="main-Content">  
       <img src={image} alt="image" />
-      <h1>{place}</h1>
+      <motion.h1
+        initial={{scale: 0.7, opacity: 1}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+      >{place}</motion.h1>
       </div>
       <div className="more-details">
         <div className="place-details">
-          <div className="top-links-colums">
+          <motion.div 
+            initial={{scale: 0.7, opacity: 1}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+          className="top-links-colums">
             <div className="top-link"><img src={sminfo} alt="face" /> <Link to="#">Information</Link></div>
             <div className="top-link"><img src={map} alt="face" /> <Link to="#">Tour Plan</Link></div>
             <div className="top-link"><img src={location} alt="face" /> <Link to="#">Location</Link></div>
             <div className="top-link"><img src={smcamer} alt="face" /> <Link to="#">Gallery</Link></div>
             <div className="top-link"><img src={user} alt="face" /> <Link to="#">Review</Link></div>
-          </div>
+          </motion.div>
         <div className="div place-content">
             <div className="content-title">
           <div className="this-content1">
-              <h1>A wonderful serenity has taken possession  of my entire soul</h1>
+              <motion.h1
+              initial={{scale: 0.7, opacity: 1}}
+              whileInView={{opacity: 1, scale: 1}}
+              transition={{ duration: 1.10, type: "spring" }}
+              >A wonderful serenity has taken possession  of my entire soul</motion.h1>
             </div>
             <div className="this-content2">
-              <div className="stuck"><p> 20% off</p></div>
-              <div className="radius">
+              <motion.div 
+              initial={{scale: 0.7, opacity: 1}}
+              whileInView={{opacity: 1, scale: 1}}
+              transition={{ duration: 1.10, type: "spring" }}
+              className="stuck"><p> 20% off</p></motion.div>
+              <motion.div 
+              initial={{scale: 0.7, opacity: 1, rotate: "0"}}
+              whileInView={{opacity: 1, scale: 1, rotate: "360deg"}}
+              transition={{ duration: 3.5, type: "spring" }}
+              className="radius">
               <div className="radius1">$1200</div>
               <div className="radius2">Perperson</div>
 
-              </div>
+              </motion.div>
             </div>
             
           </div>
-            <div className="place-info">
-              <div className="circle"><img src={smclock} alt="email" /> <span>2 days</span></div>
+            <motion.div
+            initial={{scale: 0.7, opacity: 1}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+            
+            className="place-info">
+              <div className="circle"><motion.img 
+               initial={{scale: 0.7, opacity: 1, rotate: "0"}}
+              whileInView={{opacity: 1, scale: 1, rotate: "360deg"}}
+              transition={{ duration: 3.5, type: "spring" }}
+              src={smclock} alt="email" /> <span>2 days</span></div>
               <div className="circle"><img src={smgroup} alt="email" /> <span>6 Peaple</span></div>
               <div className="circle"><img src={smuserW} alt="email" /> <span>18</span></div>
               <div className="circle"><img src={smlocation} alt="email" /> <span>Greece</span></div>
-              <div className="circle"><img src={smsunW} alt="email" /> <span>Discovery</span></div>
+              <div className="circle"><motion.img 
+              initial={{scale: 0.7, opacity: 1, rotate: "0"}}
+              whileInView={{opacity: 1, scale: 1, rotate: "360deg"}}
+              transition={{ duration: 3.5, type: "spring" }}
+              src={smsunW} alt="email" /> <span>Discovery</span></div>
 
-            </div>
-            <div className="banch-parg">
+            </motion.div>
+            <motion.div
+            initial={{scale: 0.7, opacity: 1, x: -100}}
+            whileInView={{opacity: 1, scale: 1, x: 0}}
+            transition={{ duration: 1.10, type: "spring" }}
+            
+            className="banch-parg">
               <h1>I should be incapable of drawing a single sroke at the present moment; and yet i feel that i never 
                 was a greater artist than now. When while the lovely valley teems with capour around me around and the meridian sun strike the  epper surface of the impenetrable folige of my trees and few stray fleams.
               </h1>
                <h1>I should be incapable of drawing a single sroke at the present moment; and yet i feel that i never 
                 was a greater artist than now. When while the lovely valley teems with capour around me around and the meridian sun strike the  epper surfacethe Almaighty whom formed us in his own image and the breath .
               </h1>
-            </div>
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 1, x: 100}}
+              whileInView={{opacity: 1,  x: 0}}
+              transition={{ duration: 1.10, type: "spring" }}
+             className="dron-video">
+              <video src={drone} loop autoPlay controls muted className="back-clip "></video>
 
+            </motion.div>
 
 
 
@@ -88,20 +135,61 @@ const TourDetails = () => {
           </div>
         </div>
         <div className="form-grab">
-          <div className="form-card">
-            <div className="this-title"><p>Book This Tour</p></div>
-            <div className="inpitA"> <img src={user} alt="map"/> <input type="text" name="text" placeholder="Full name *" /> </div>
-            <div className="inpitA"> <img src={email} alt="map"/> <input type="email" name="text" placeholder="Email *" /> </div>
-            <div className="inpitA"> <img src={email} alt="map"/> <input type="email" name="text" placeholder=" Confirm Email *" /> </div>
-            <div className="inpitA"> <img src={phone} alt="map"/> <input type="number" name="text" placeholder=" Phone *" /> </div>
-            <div className="inpitA"> <img src={calender} alt="map"/> <input type="datetime-local" name="text"  /> </div>
-              <textarea name="massae" placeholder="massage"></textarea> 
+          <motion.div 
+           initial={{scale: 0.7, opacity: 0, y: -100}}
+           whileInView={{opacity: 1, scale: 1, y: 0}}
+           transition={{ duration: 1.10, type: "spring" }}
+          className="form-card">
+            <motion.div
+             initial={{scale: 0.7, opacity: 0, x: 100}}
+           whileInView={{opacity: 1, scale: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }} 
+             className="this-title"><p>Book This Tour</p></motion.div>
+            <motion.div
+             initial={{scale: 0.7, opacity: 0, x: 100}}
+           whileInView={{opacity: 1, scale: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }} 
+             className="inpitA"> <img src={user} alt="map"/> <input type="text" name="text" placeholder="Full name *" /> </motion.div>
+            <motion.div
+             initial={{scale: 0.7, opacity: 0, x: 100}}
+           whileInView={{opacity: 1, scale: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }} 
+             className="inpitA"> <img src={email} alt="map"/> <input type="email" name="text" placeholder="Email *" /> </motion.div>
+            <motion.div
+             initial={{scale: 0.7, opacity: 0, x: 100}}
+           whileInView={{opacity: 1, scale: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }} 
+             className="inpitA"> <img src={email} alt="map"/> <input type="email" name="text" placeholder=" Confirm Email *" /> </motion.div>
+            <motion.div
+             initial={{scale: 0.7, opacity: 0, x: 100}}
+           whileInView={{opacity: 1, scale: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }} 
+             className="inpitA"> <img src={phone} alt="map"/> <input type="number" name="text" placeholder=" Phone *" /> </motion.div>
+            <motion.div
+             initial={{scale: 0.7, opacity: 0, x: 100}}
+           whileInView={{opacity: 1, scale: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }} 
+             className="inpitA"> <img src={calender} alt="map"/> <input type="datetime-local" name="text"  /> </motion.div>
+              <motion.textarea 
+               initial={{scale: 0.7, opacity: 0, x: 100}}
+                whileInView={{opacity: 1, scale: 1, x: 0}}
+                transition={{ duration: 1.10, type: "spring" }} 
+              name="massae" placeholder="massage"></motion.textarea> 
                 
-              <button type="button" className="book now">Book now</button>
+              <motion.button 
+              nitial={{scale: 0.7, opacity: 0, x: 100}}
+              whileInView={{opacity: 1, scale: 1, x: 0}}
+              transition={{ duration: 1.10, type: "spring" }} 
               
-          </div>
+              type="button" className="book now">Book now</motion.button>
+              
+          </motion.div>
             <div className="form-other-detail">
-              <div className="why-card">
+              <motion.div 
+              initial={{ opacity: 0, x: 100}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{ duration: 1.10, type: "spring" }} 
+              className="why-card">
 
                 <div className="why-title"><p>Why Book with Us</p></div>
                 <div className="why-details">
@@ -114,11 +202,15 @@ const TourDetails = () => {
                   </ul>
                 </div>
 
-              </div>
+              </motion.div>
               
             </div>
 
-            <div className="prob-card">
+            <motion.div
+             initial={{ opacity: 0, x: -100}}
+           whileInView={{opacity: 1, x: 0}}
+           transition={{ duration: 1.10, type: "spring" }}   
+            className="prob-card">
                 <img src={mapp} alt="mapp" />
               <div className="prob-detail">
                 <div className="prob-title"><p>GET A QUESTION</p></div>
@@ -127,7 +219,7 @@ const TourDetails = () => {
                   <div className="prob-email"><img src={emailB} alt="calender" /><p> HolidayPlanners@gmail.com</p></div>
                   <div className="prob-phone"><img src={phoneB} alt="calender" /><p> +250788223635</p></div>
               </div>
-              </div>
+              </motion.div>
         </div>
 
       </div>
@@ -137,18 +229,29 @@ const TourDetails = () => {
          <div className="footer-card1">
           <img src={logo} alt="mapp" />
           <div className="title1"><h4><span>HoliDay Planners</span> sit amet consectetur adipisicing elit. Debitis quae reiciendis temporibus quo ut Lorem ipsum dolor sit amet consectetur, adipisicin </h4></div>
-            <div className="input-footer">
+            <motion.div 
+            initial={{scale: 0.7, opacity: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+            className="input-footer">
               <input type="email" name="" placeholder="Enter Your Email" />
               <button type="button">Submit</button>
-            </div>
-            <div className="footer-img"><img src={logoo} alt="" /></div>
+            </motion.div>
+            <motion.div
+            initial={{scale: 0.7, opacity: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+             className="footer-img"><img src={logoo} alt="" /></motion.div>
          </div>
           <div className="footer-card2">
-            <div className="title2"><h1>navigation</h1></div>
+            <div className="title2"><motion.h1
+              initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+            >navigation</motion.h1></div>
             <div className="lists">
               <ul>
-                <Link to="/" element={<MainContent/>}> <li>Home</li></Link>
-                
+                <li>Home</li>
                 <li>About</li>
                 <li>Destination</li>
                 <li>Tour</li>
@@ -159,20 +262,28 @@ const TourDetails = () => {
             
           </div>
           <div className="footer-card3">
-            <div className="title3"><h1>need help ?</h1></div>
+            <div className="title3"><motion.h1 
+              initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+            >need help ?</motion.h1></div>
             <div className="colum"><span>call us</span><h2>+2507888223635</h2></div><br />
             <div className="colum"><span>Email for us</span><h2>pascofreeguy@gmail.com</h2></div><br />
             <div className="colum"><span>Location</span><h2>Rwanda kigali/gikondo</h2></div><br />
             <div className="colum"><span>Follow us</span></div>
           </div>
-        <div className="footer-card4">
+        <motion.div
+          initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+         className="footer-card4">
         <h1>Copyright@2026 <span>Bigbro code lab</span>. All Right Reserved</h1>
         <div className="stach">
           <div className="tach1">Privacy Policy</div>
           <div className="tach1">Terms Of Use</div>
           <div className="tach2">Terms Of Use</div>
         </div>
-        </div>
+        </motion.div>
       
         </div>
       </footer>

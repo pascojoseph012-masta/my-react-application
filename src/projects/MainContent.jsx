@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './MainContent.css'
+import {motion, useAnimationControls, useInView} from 'framer-motion'
+
 import MainTour from '../projects/MainTour'
 import Nava from "../projects/Nava"
 import kigali from'../assets/kigali.jpg'
@@ -31,6 +33,8 @@ import smsunW from '../assets/smsunW.svg'
 import smgroup from '../assets/smgroup.svg'
 import smcamer from '../assets/smcamer.svg'
 import { Content } from '../assets/ContentSilde'
+
+
 const MainContent = () => {
 const [index, setindex] = useState (0)
 
@@ -43,27 +47,64 @@ const buttonhandelprev = () =>{
   setindex((previndex)=>(previndex === 0 ?  InitialContent.length - 1 : previndex -1))
 
 }
-
 const InitialObject = InitialContent[index];
 const [contentIndex , setcontentIndex] = useState(0)
+
+const controls = useAnimationControls()
 const render = Content[contentIndex]; 
- 
+const ref = useRef(null)
+    const isInview = useInView(ref);
+    
+    const variants = {
+      enter: (direction) => ({
+        enter: direction > 0 ? 300 : -300,
+        opacity: 0,
+      }),
+      center: {
+        x: 0,
+        opacity: 1,
+      },
+
+      exit: (direction) =>({
+        x: direction > 0 ? -300 : 300,
+        opacity: 0
+      })
+
+    }
+
   return (
     
     <div>
 
         <Nava/>
-          <div className="mySlide">
+        
+          <div 
+          
+          className="mySlide">
+            
             <div className="image-buttons">
               <button onClick={()=>buttonhandel()} type="button">Prev</button>
             <button onClick={()=>buttonhandelprev()} type="button">Next</button>
-              </div>
+          </div>
+          
            <img src={InitialObject.image}/>
-            <p >{InitialObject.parg}</p>
-            <h1 >{InitialObject.header}</h1 >
+            <motion.p 
+            initial={{scale: 0.7, opacity: 1, y: 0  }}
+            whileInView={{ opacity: 1,  scale: 1, y: 1}}
+            transition={{ duration: -200, type: "spring" }}
+            >{InitialObject.parg}</motion.p>
+            <motion.h1 
+            initial={{scale: 0.7, opacity: 1}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+            >{InitialObject.header}</motion.h1 >
           </div>
           {/* MAIN INPUTS SECTION */}
-          <div className="main-inputs">
+          <motion.div 
+          initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+          className="main-inputs">
 
             <div className="input1"><img src={location} alt="location" /><input type="text" name="text" placeholder="Where to?" /></div>
             <div className="input2">
@@ -96,10 +137,15 @@ const render = Content[contentIndex];
               </select>
             </div>
             <button type="button">FIND NOW</button>
-          </div>
-          <div className="grid-cards">
+          </motion.div>
+          <motion.div 
+          initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+          
+          className="grid-cards">
             <div className="stuck-card">
-              <div className="drop-card"><img src={drop} alt="drop" /></div>
+              <div className="drop-card"></div>
               <div className="card1"><img src={card1} alt="card1" /></div>
               <div className="card2"><img src={card2} alt="card2" /></div>
             </div>
@@ -116,8 +162,12 @@ const render = Content[contentIndex];
               </div>
               
             </div>
-           </div>
-           <div className="raid-container">
+           </motion.div>
+           <motion.div 
+           initial={{scale: 0.7, opacity: 0}}
+           whileInView={{opacity: 1, scale: 1}}
+           transition={{ duration: 1.10, type: "spring" }}
+           className="raid-container">
             <div className="raid-content">
               <div className="headings"><p>Amazing Destination</p></div>
               <div className="raid-parg"><h1>Choose The <span>Destination</span> Just</h1></div>
@@ -138,9 +188,13 @@ const render = Content[contentIndex];
               </div>
             </div>
             <button type="button" className="veiw">Veiw ALL</button>
-           </div>
+           </motion.div>
            <MainTour/>
-           <div className="last-section">
+           <motion.div
+           initial={{scale: 0.7, opacity: 0}}
+           whileInView={{opacity: 1, scale: 1}}
+           transition={{ duration: 1.10, type: "spring" }} 
+           className="last-section">
             <div className="stuck-section">
               <div className="stuck-title">Testimonials</div>
               <p>Customer <span>Reviews</span></p>
@@ -163,21 +217,33 @@ const render = Content[contentIndex];
                 <span>{render.span}</span>
               </div>
             </div>
-           </div>
+           </motion.div>
         <footer>
         <img src={mapp} alt="mapp" />
         <div className="footer-content">
          <div className="footer-card1">
           <img src={logo} alt="mapp" />
           <div className="title1"><h4><span>HoliDay Planners</span> sit amet consectetur adipisicing elit. Debitis quae reiciendis temporibus quo ut Lorem ipsum dolor sit amet consectetur, adipisicin </h4></div>
-            <div className="input-footer">
+            <motion.div 
+            initial={{scale: 0.7, opacity: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+            className="input-footer">
               <input type="email" name="" placeholder="Enter Your Email" />
               <button type="button">Submit</button>
-            </div>
-            <div className="footer-img"><img src={logoo} alt="" /></div>
+            </motion.div>
+            <motion.div
+            initial={{scale: 0.7, opacity: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring" }}
+             className="footer-img"><img src={logoo} alt="" /></motion.div>
          </div>
           <div className="footer-card2">
-            <div className="title2"><h1>navigation</h1></div>
+            <div className="title2"><motion.h1
+              initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+            >navigation</motion.h1></div>
             <div className="lists">
               <ul>
                 <li>Home</li>
@@ -191,20 +257,28 @@ const render = Content[contentIndex];
             
           </div>
           <div className="footer-card3">
-            <div className="title3"><h1>need help ?</h1></div>
+            <div className="title3"><motion.h1 
+              initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+            >need help ?</motion.h1></div>
             <div className="colum"><span>call us</span><h2>+2507888223635</h2></div><br />
             <div className="colum"><span>Email for us</span><h2>pascofreeguy@gmail.com</h2></div><br />
             <div className="colum"><span>Location</span><h2>Rwanda kigali/gikondo</h2></div><br />
             <div className="colum"><span>Follow us</span></div>
           </div>
-        <div className="footer-card4">
+        <motion.div
+          initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring" }}
+         className="footer-card4">
         <h1>Copyright@2026 <span>Bigbro code lab</span>. All Right Reserved</h1>
         <div className="stach">
           <div className="tach1">Privacy Policy</div>
           <div className="tach1">Terms Of Use</div>
           <div className="tach2">Terms Of Use</div>
         </div>
-        </div>
+        </motion.div>
       
         </div>
       </footer>

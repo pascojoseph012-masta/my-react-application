@@ -2,6 +2,11 @@ import React, { use, useState } from 'react'
 import './Maintour.css'
 import { TourContent } from '../assets/Tour'
 import { Link} from 'react-router-dom'
+import {motion, useAnimationControls, useInView} from 'framer-motion'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 
 
 const MainTour = ({tours}) => {
@@ -9,9 +14,14 @@ const MainTour = ({tours}) => {
   return (
     
    <div>
-<div className="main-tour">
+<motion.div 
+initial={{scale: 0.7, opacity: 0}}
+whileInView={{opacity: 1, scale: 1}}
+transition={{ duration: 1.10, type: "spring" }}
+
+className="main-tour">
   {TourContent.map((TourContent, index)=>{        
-return <div key={index}> 
+    return <div key={index}> 
             
     <img src={TourContent.image} alt="image" />
     <div className="downword">
@@ -26,7 +36,7 @@ return <div key={index}>
   </div>
   })}
       
-</div>
+</motion.div>
 
     
 

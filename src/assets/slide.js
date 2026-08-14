@@ -13,7 +13,7 @@ export const InitialContent =[
     {
 
 
-        parg: " Enjoy Travel With Holiday Planners",
+        parg: " Enjoy Travel With Holiday ",
         header:"Ajourney of 1000 miles start with a single step. import the full demo content with one click and create a head-turning website for your travel  agency.",
         image: simage,
     },

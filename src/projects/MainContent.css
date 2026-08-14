@@ -26,23 +26,12 @@
     left: 450px;
     font-weight: 700;
     width: 500px;
-    animation: fade-down 2s;
     transition: all 2s ease ;
 
     
 }
-@keyframes fade-down{
-    0%{
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(0px) scale(1);
 
-    }
-}
-p::after{
+/* p::after{
     content: '';
     width: 80%;
     height: 10vh;
@@ -51,7 +40,7 @@ p::after{
     top: 55%;
     right: 10%;
     z-index: -1;
-}
+} */
 .mySlide h1{
     position: absolute;
     top: 60%;
@@ -66,23 +55,12 @@ p::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fade-up 2;
-    transition: all 2s ease-out;
+   
     font-family: 'Times New Roman', Times, serif;
 
 
 }
-@keyframes fade-up{
-    0%{
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(0px) scale(1);
 
-    }
-}
 .mySlide img{
     height: 100vh;
     width: 100%;
