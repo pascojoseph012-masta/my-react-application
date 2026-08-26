@@ -80,19 +80,15 @@
     border-radius: 50%;
     border: 2px solid white;
     position: relative;
-    left: 76%;
+    left: 76.5%;
     margin-top: 10px;
     cursor: pointer;
-    transition: all 5s ease;
-    animation: spin 20ms linear;
+    
     
     
     
 }
-@keyframes spin{
-    from{translate: 0;}
-    to{translate: -100%;}
-}
+
 
 .right-side .close-btn button{
     width: 50%;
@@ -134,5 +130,6 @@
     margin-left: 60%;
     margin-top: 30%;
     opacity: 0.3;
+    
 
 }

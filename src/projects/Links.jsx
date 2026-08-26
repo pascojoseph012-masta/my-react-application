@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import  './links.css'
+import './LinksResponsive.css'
 import close from '../assets/close.svg'
 import close2 from '../assets/close2.svg'
 import logo from '../assets/10012.png'
@@ -23,7 +24,7 @@ const Links = ({closePopup}) => {
         
         initial={{ x: '100%' }} // Start off-screen to the left
           animate={{ x: 0 }}       // Slide into view
-          exit={{ x: '100%' }}    // Slide back out
+          exit={{ x: '-100%' }}    // Slide back out
           transition={{ 
             type: 'tween',         // Disables physics, enables CSS timeline
             duration: 0.4,         // Animation duration in seconds
@@ -33,7 +34,7 @@ const Links = ({closePopup}) => {
         
         className="link-container">
             <div className="left-side">
-                <div className="logo"><img src={logo} alt="logo" /></div>
+                <div className="logo"> <Link to="/"> <img src={logo} alt="logo" /></Link></div>
                 <div className="linkies">
                     <Link to='#'>Home</Link>
                     <Link to='#'>About</Link>

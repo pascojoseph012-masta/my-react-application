@@ -3,25 +3,40 @@ import './Maintour.css'
 import { TourContent } from '../assets/Tour'
 import { Link} from 'react-router-dom'
 import {motion, useAnimationControls, useInView} from 'framer-motion'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 
 
-const MainTour = ({tours}) => {
-  
+
+const MainTour = () => {
+  const [isHovered, setisHovered] = useState (false)
+  const duplicateContent = [...TourContent, ...TourContent, ...TourContent];
+
   return (
+    <div className="whole-tour"
+
+    onMouseEnter={() => setisHovered()}
+    onMouseLeave={() => setisHovered(false)}
     
+    >
    <div>
 <motion.div 
-initial={{scale: 0.7, opacity: 0}}
-whileInView={{opacity: 1, scale: 1}}
-transition={{ duration: 1.10, type: "spring" }}
 
-className="main-tour">
-  {TourContent.map((TourContent, index)=>{        
-    return <div key={index}> 
+  animate= {{
+    x: isHovered ? undefined : ["0%", "-50%",]
+  }}
+
+  transition={{
+    x : {
+      duration: "15",
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "loop"
+    }
+  }}
+
+ className="main-tour">
+  {duplicateContent.map((TourContent, index)=>{        
+    return <div key={`${TourContent.id}-${TourContent.id}`}> 
             
     <img src={TourContent.image} alt="image" />
     <div className="downword">
@@ -41,7 +56,8 @@ className="main-tour">
     
 
 </div>
-    
+
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import  './Nav.css'
+import './Navresponsive.css'
 import logo from '../assets/10001.png'
 import  bar from '../assets/bar.svg'
 import search from '../assets/search.svg'
@@ -10,7 +11,7 @@ const Nava = ({popUPOpen,  OpenSearch}) => {
 
         <nav>
 
-            <div className="logo"><img src={logo} alt="logos" />  </div>
+            <div className="logo"> <Link to="/"> <img src={logo} alt="logos" /> </Link> </div>
             <div className="content-nav">
             <div className="nav-btn"><Link to="#">Reserve</Link></div>
 

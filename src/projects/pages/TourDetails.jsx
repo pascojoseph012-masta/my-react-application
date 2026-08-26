@@ -1,5 +1,6 @@
 import React from 'react'
 import './TourDetail.css'
+import './TourDetailsResponsive.css'
 import { Link, useParams } from 'react-router-dom'
 import {motion, useAnimationControls, useInView} from 'framer-motion'
 import { TourContent } from '../../assets/Tour';
@@ -74,7 +75,7 @@ const TourDetails = () => {
               <motion.div 
               initial={{scale: 0.7, opacity: 1, rotate: "0"}}
               whileInView={{opacity: 1, scale: 1, rotate: "360deg"}}
-              transition={{ duration: 3.5, type: "spring" }}
+              transition={{ duration: 3.5, type: "spring", }}
               className="radius">
               <div className="radius1">$1200</div>
               <div className="radius2">Perperson</div>

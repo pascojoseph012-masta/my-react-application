@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './MainContent.css'
-import {motion, useAnimationControls, useInView} from 'framer-motion'
-
+import './MainContentResponsive.css'
+import {motion, useAnimationControls, useInView, AnimatePresence} from 'framer-motion'
 import MainTour from '../projects/MainTour'
 import Nava from "../projects/Nava"
 import kigali from'../assets/kigali.jpg'
@@ -34,19 +34,39 @@ import smgroup from '../assets/smgroup.svg'
 import smcamer from '../assets/smcamer.svg'
 import { Content } from '../assets/ContentSilde'
 
+const variant = {
+    enter: (direction) => ({
+      x: direction > 0 ? 300 : -300,
+          opacity: 0
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+      
+    },
+    view: {
 
+    },
+    exit: (direction) => ({
+      x: direction > 0 ? -300 : 300,
+       opacity: 0,
+    }),
+  }
 const MainContent = () => {
 const [index, setindex] = useState (0)
+const [direction, setdirection] = useState(1)
 
 const buttonhandel = () =>{
+  setdirection(1)
   setindex((previndex)=>(previndex + 1) % InitialContent.length)
 
 }
 
 const buttonhandelprev = () =>{
-  setindex((previndex)=>(previndex === 0 ?  InitialContent.length - 1 : previndex -1))
-
+  setdirection(-1)
+  setindex((previndex)=>(previndex - 1 + InitialContent.length) % InitialContent.length)
 }
+
 const InitialObject = InitialContent[index];
 const [contentIndex , setcontentIndex] = useState(0)
 
@@ -54,23 +74,7 @@ const controls = useAnimationControls()
 const render = Content[contentIndex]; 
 const ref = useRef(null)
     const isInview = useInView(ref);
-    
-    const variants = {
-      enter: (direction) => ({
-        enter: direction > 0 ? 300 : -300,
-        opacity: 0,
-      }),
-      center: {
-        x: 0,
-        opacity: 1,
-      },
-
-      exit: (direction) =>({
-        x: direction > 0 ? -300 : 300,
-        opacity: 0
-      })
-
-    }
+  
 
   return (
     
@@ -78,32 +82,52 @@ const ref = useRef(null)
 
         <Nava/>
         
-          <div 
-          
-          className="mySlide">
+          <div className="mySlide">
             
-            <div className="image-buttons">
-              <button onClick={()=>buttonhandel()} type="button">Prev</button>
-            <button onClick={()=>buttonhandelprev()} type="button">Next</button>
-          </div>
+           <div className="frames" style={{background: "#ccc", height: "100vh", width: "100%",  position: "relative", }}>
+            <AnimatePresence custom={direction} mode="popLayout">
+              <motion.div
+              key={index}
+              custom={direction}
+              variants={variant}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              
+              transition={{
+                duration: 1, ease: "backInOut", type: "spring",
+                
+              }}
+              className="slide"
+              >
+                <img src={InitialObject.image} alt="" />
+                <motion.h1
+                initial={{scale: 0.8, opacity: 0, y: -50}}
+                whileInView={{opacity: 1, scale: 1, y: 0}}
+                transition={{ duration: 2, type: "spring" }}
+                >{InitialObject.parg}</motion.h1>
+                <motion.h2
+                initial={{scale: 0.8, opacity: 0, y: 50}}
+                whileInView={{opacity: 1, scale: 1, y: 0}}
+                transition={{ duration: 1, }}
+                >{InitialObject.header}</motion.h2>
+                
+              </motion.div>
+              <div className="buttons">
+                <button className="btn1" onClick={buttonhandelprev}>Prev</button>
+                <button className="btn2" onClick={buttonhandel}>Next</button>
+              </div>
+            </AnimatePresence>
+           </div>
           
-           <img src={InitialObject.image}/>
-            <motion.p 
-            initial={{scale: 0.7, opacity: 1, y: 0  }}
-            whileInView={{ opacity: 1,  scale: 1, y: 1}}
-            transition={{ duration: -200, type: "spring" }}
-            >{InitialObject.parg}</motion.p>
-            <motion.h1 
-            initial={{scale: 0.7, opacity: 1}}
-            whileInView={{opacity: 1, scale: 1}}
-            transition={{ duration: 1.10, type: "spring" }}
-            >{InitialObject.header}</motion.h1 >
+          
+          
           </div>
           {/* MAIN INPUTS SECTION */}
           <motion.div 
           initial={{scale: 0.7, opacity: 0}}
           whileInView={{opacity: 1, scale: 1}}
-          transition={{ duration: 1.10, type: "spring" }}
+          transition={{ duration: 1.10, type: "spring", }}
           className="main-inputs">
 
             <div className="input1"><img src={location} alt="location" /><input type="text" name="text" placeholder="Where to?" /></div>
@@ -164,9 +188,9 @@ const ref = useRef(null)
             </div>
            </motion.div>
            <motion.div 
-           initial={{scale: 0.7, opacity: 0}}
-           whileInView={{opacity: 1, scale: 1}}
-           transition={{ duration: 1.10, type: "spring" }}
+          //  initial={{scale: 0.7, opacity: 0}}
+          //  whileInView={{opacity: 1, scale: 1}}
+          //  transition={{ duration: 1.10, type: "spring" }}
            className="raid-container">
             <div className="raid-content">
               <div className="headings"><p>Amazing Destination</p></div>

@@ -4,7 +4,47 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-    
+
+.whole-tour{
+    overflow: hidden;
+    width: 90%;
+
+}
+@media (min-width: 1280px) and (max-width: 1280px) {
+    .whole-tour{
+    overflow: hidden;
+    width: 99%;
+
+}
+}
+@media (min-width: 884px) and (max-width: 884px) {
+    .whole-tour{
+    overflow: hidden;
+    width: 90%;
+
+
+}
+}
+
+@media (768px <= width <= 1024px) {
+.whole-tour{
+    margin-top: 10em;
+
+}
+}
+@media (min-width: 768px) and (max-width: 768px) {}
+  
+
+@media (max-width: 826px) {
+.whole-tour{
+    overflow: hidden;
+    width: 92%;
+    margin-top: 43em;
+    position: relative;
+    left: 30px;
+
+}
+}
 .main-tour img{
     width: 50em;
     height: 40vh;
@@ -12,8 +52,7 @@
 
 }
 .main-tour{
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    display: flex;
     gap: 20px;
     align-items: center;
     align-content: center;
