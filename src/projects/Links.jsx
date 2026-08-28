@@ -10,7 +10,8 @@ import instagram from '../assets/instagram.svg'
 import twitter from '../assets/twitter.svg'
 import logos from '../assets/10002.svg'
 import { motion, AnimatePresence } from 'framer-motion';
-
+import Tours from '../projects/Tours'
+import MainContent from '../projects/MainContent'
 
 
 
@@ -39,7 +40,7 @@ const Links = ({closePopup}) => {
                     <Link to='#'>Home</Link>
                     <Link to='#'>About</Link>
                     <Link to='#'>Destination</Link>
-                    <Link to='#'>Tour</Link>
+                    <Link to="/Tours">Tour</Link>
                     <Link to='#'>Blogs</Link>
                     <Link to='#'>Contact Us</Link>
                 </div>

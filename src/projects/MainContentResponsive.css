@@ -811,8 +811,6 @@ footer .footer-content .footer-card1 .title1{
 }
 }
 
-
-
 @media (480px <= width <= 767px) {
 
 .slide h1{
@@ -16993,13 +16991,13 @@ footer .footer-content .footer-card1 .title1{
     justify-content: center;
     align-content: center;
     z-index: 999;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
+    color: white;
+    font-size: 1.3rem;
     font-family: 'Times New Roman', Times, serif;
     width: 40%;
     text-align: center;
-    top: 12em;
-    left: 8em;
+    top: 10em;
+    left: 7em;
     text-shadow: 2px 2px 10px black;
 
 }
@@ -17200,7 +17198,7 @@ footer .footer-content .footer-card1 .title1{
     gap: 15px;
     padding: 10px;
     position: relative;
-    right: 11em;
+    left: 3em;
     
     
 
@@ -18723,7 +18721,7 @@ footer .footer-content .footer-card1 .title1{
     height: 130vh;
     margin-left:  auto;
     position: relative;
-    right:8em;
+    right:20em;
 }
 .card1{
     grid-area: stuck;

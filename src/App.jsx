@@ -6,9 +6,9 @@ import Links from './projects/Links'
 import Prompt from './projects/prompt'
 import MainTour from "./projects/MainTour"
 import { TourContent } from "./assets/Tour"
-import About from "./projects/pages/about";
 import TourDetails from "./projects/pages/TourDetails";
 import ToTop from "./projects/pages/ToTop";
+import Tours from "./projects/Tours"
 
 
 
@@ -39,7 +39,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<MainContent/>}/>
       <Route path="/" element={<Links/>}/>
-      <Route path="/about" element={<About/>}/>
+      <Route path="/Tours" element={<Tours/>}/>
       <Route path="/TourDetails" element={<TourDetails/>}/>
       <Route path="/TourContent/:TourContentId" element={<TourDetails/>}/>
      

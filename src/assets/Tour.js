@@ -65,4 +65,32 @@ export const TourContent =[
         price:"$250",
         button:"book now"
     }
+    ,
+    {
+         id:"eee",
+        image: greece,
+        place: "Switzerland",
+        title: "Holiday Planners is a World Leading Online Tour Booking Platform",
+        description: "Far  away, behind the word mountain far from countries Vokalia and  .",
+        duration:"7days 8hours",
+        duration_icon: timer,
+        groupsize_icon: group,
+        groupsize: "50+ peaple",
+        price:"$750",
+        button:"book now"
+    },
+
+    {
+         id: "fff",
+        image: Italy,
+        place: "greece",
+        title: "Holiday Planners is a World Leading Online Tour Booking Platform",
+        description: "Far  away, behind the word mountain far from countries Vokalia and  .",
+        duration:"6days 3hours",
+        duration_icon: timer,
+        groupsize_icon: group,
+        groupsize: "50+ peaple",
+        price:"$250",
+        button:"book now"
+    }
 ]

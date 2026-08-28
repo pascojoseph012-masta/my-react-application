@@ -146,6 +146,8 @@
     color: white;
     margin: 20px auto;
     border-radius: 5px;
+    font-variant: small-caps;
+    font-weight: 700;
 }
 .downword .grid-sec2 a:hover{
     background-color: rgba(0, 0, 0, 0.918);

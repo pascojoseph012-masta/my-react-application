@@ -13,7 +13,7 @@ const Nava = ({popUPOpen,  OpenSearch}) => {
 
             <div className="logo"> <Link to="/"> <img src={logo} alt="logos" /> </Link> </div>
             <div className="content-nav">
-            <div className="nav-btn"><Link to="#">Reserve</Link></div>
+            <div className="nav-btn"><Link to="/Tours">Reserve</Link></div>
 
             <div className="nav-buttons">
               <div className="nav-search"><Link to="#"><button onClick={()=>OpenSearch()}><img src={search} alt="search" /></button></Link></div>
