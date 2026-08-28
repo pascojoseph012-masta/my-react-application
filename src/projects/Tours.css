@@ -22,18 +22,7 @@
     height: 98vh;
     object-fit: cover;
 }
-.landing h1{
-    display: grid;
-    grid-area: stuck;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    font-size: 5rem;
-    color: white;
-    font-family:'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
 
-}
 .second-landing{
     width: 100%;
     height: 280vh;
