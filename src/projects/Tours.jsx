@@ -251,7 +251,7 @@ const Tour = () => {
               initial={{scale: 0.7, opacity: 0}}
           whileInView={{opacity: 1, scale: 1}}
           transition={{ duration: 1.10, type: "spring" }}
-          style={{fontSize: "3rem"}}
+          style={{fontSize: "2.4rem"}}
             >navigation</motion.h1></div>
             <div className="lists">
               <ul>
@@ -270,8 +270,8 @@ const Tour = () => {
               initial={{scale: 0.7, opacity: 0}}
           whileInView={{opacity: 1, scale: 1}}
           transition={{ duration: 1.10, type: "spring" }}
-          style={{fontSize: "3rem"}}
-            >need help ?</motion.h1></div>
+          style={{fontSize: "2.4rem"}}
+            >need help?</motion.h1></div>
             <div className="colum"><span>call us</span><h2>+2507888223635</h2></div><br />
             <div className="colum"><span>Email for us</span><h2>pascofreeguy@gmail.com</h2></div><br />
             <div className="colum"><span>Location</span><h2>Rwanda kigali/gikondo</h2></div><br />
