@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import  './links.css'
 import './LinksResponsive.css'
@@ -17,7 +17,10 @@ import MainContent from '../projects/MainContent'
 
 
 
-const Links = ({closePopup}) => {
+const Links = ({closePopup, showTour}) => {
+
+   
+    
   return (
     <div>
 
@@ -40,7 +43,7 @@ const Links = ({closePopup}) => {
                     <Link to='#'>Home</Link>
                     <Link to='#'>About</Link>
                     <Link to='#'>Destination</Link>
-                    <Link to="/Tours">Tour</Link>
+                     <Link onClick={() => handleTourClick(false)} to="/Tours">Tour</Link> 
                     <Link to='#'>Blogs</Link>
                     <Link to='#'>Contact Us</Link>
                 </div>

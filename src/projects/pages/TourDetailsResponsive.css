@@ -1591,4 +1591,217 @@ footer .footer-content .footer-card4{
 
 @media (1441px <= width <= 1920px) {
     
+  footer{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: grid;
+    grid-template-areas: "stuck";
+    z-index: -1;
+    display: flex;
+    align-items: center;
+ }
+ 
+ footer img{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.200;
+    position: absolute;
+    
+    
+ }
+ footer .footer-content{
+    grid-area: stuck;
+    z-index: 999;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 13em;
+    row-gap: 4em ;
+    
+    
+ }
+ footer .footer-content .footer-card1{
+    width: 30em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+footer .footer-content .footer-card1 img{
+     width: 330px;
+    height: 10vh;
+    grid-area: stuck;
+    opacity: 100;
+}
+footer .footer-content .footer-card1 .title1{
+   color: rgba(255, 255, 255, 0.836);
+   display: flex;
+   align-items: center;
+   margin-top: 5em;
+   font-size: 1.2em;
+    
+}
+footer .footer-content .footer-card1 .title1 span{
+    color: white;
+    font-weight: 700;
+}
+
+footer .footer-content .footer-card1 .input-footer{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+ footer .footer-content .footer-card1 .input-footer input{
+    border: 1px solid rgb(197, 195, 195);
+    border-radius: 5px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    height: 7vh;
+    width: 15em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.137);
+    padding: 10px;
+    color: aliceblue;
+ }
+  footer .footer-content .footer-card1 .input-footer input::placeholder{
+    color: rgba(255, 255, 255, 0.815);
+    
+  }
+ footer .footer-content .footer-card1 .input-footer button{
+    width: 6em;
+    height: 7vh;
+    background-color: #C29D59;
+    color: white;
+    border-radius: 5px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+ }
+ footer .footer-content .footer-card1 .footer-img img{
+    width: 22.2em;
+    height: 7vh;
+    margin-top: 2em;
+    border-radius: 5px;
+ }
+
+footer .footer-content .footer-card2 .title2{
+    margin: 35px;
+    font-size: 2.2rem;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: white;
+    max-width: 5em;
+    height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+}
+
+footer .footer-content .footer-card2{
+    max-width: 10em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-content .footer-card2 .lists{
+    margin-left: 10%;
+    color: white;
+    line-height: 2;
+}
+footer .footer-content .footer-card2 .lists li{
+    list-style: square;
+    font-variant: small-caps;
+    font-size: 1.3rem
+}
+footer .footer-content .footer-card3{
+    max-width: 20em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 5em;
+
+}
+footer .footer-content .footer-card3 .title3{
+    margin: 35px;
+    font-size: xx-large;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: white;
+    max-width: 6em;
+    height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+}
+footer .footer-content .footer-card3 .colum{
+    margin-left: 2em;
+    height: 7vh;
+    border-left: 3px solid #C29D59;
+    display: flex;
+    flex-direction: column;
+
+}
+footer .footer-content .footer-card3 .colum span{
+    color: rgba(255, 255, 255, 0.712);
+    padding-left: 4px;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+footer .footer-content .footer-card3 .colum h2{
+      color: rgba(255, 255, 255, 0.938);
+    padding-left: 4px;
+    font-weight: 600;
+}
+ footer .footer-content .footer-card4{
+    margin-left:2em ;
+    width: 70em;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 23em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    columns: 2;
+    border-top: 1px solid rgba(255, 255, 255, 0.911);
+
+ }
+ footer .footer-content .footer-card4 h1{
+    color: white;
+ }
+ footer .footer-content .footer-card4 h1 span{
+    color: #C29D59;
+    font: 600;
+    
+ }
+  footer .footer-content .footer-card4 .stach{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+
+  }
+  footer .footer-content .footer-card4 .stach .tach1{
+    color: white;
+    font: 500;
+    font-variant: small-caps;
+    width: 7em;
+    border-right: 1px solid white;
+
+  }
+  footer .footer-content .footer-card4 .stach .tach2{
+    color: white;
+    font: 500;
+    font-variant: small-caps;
+    width: 7em;
+
+  }
+
 }

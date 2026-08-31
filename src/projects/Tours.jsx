@@ -36,19 +36,27 @@ import smphone from '../assets/smphone.svg'
 import smemail from '../assets/smemail.svg'
 import { div } from 'framer-motion/client';
 import back from '../assets/back.jpg'
+import Links from '../projects/Links'
 
 const Tour = () => {
+  const [showTour, setshowTour] = useState (true);
+  const handleTourClick = () => {
+    setshowTour(true);
+  }
+    
   return (
+    
     <div>
       <div className="landing">
+        { showTour && <Link showTour={showTour} /> }
         <img src={back} alt="tour" />
         <h1>Tours</h1>
         <div className="second-landing">
           <div className="details-tour">
             <motion.div 
             initial={{scale: 0.7, opacity: 0}}
-          whileInView={{opacity: 1, scale: 1}}
-          transition={{ duration: 1.10, type: "spring", }}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{ duration: 1.10, type: "spring", }}
             className="filter-card">
               <div className="this">Sort By :</div>
               <div className="this">
