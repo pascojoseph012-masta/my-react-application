@@ -17,11 +17,7 @@ import Tours from "./projects/Tours"
 
 const App = () => {
  const [popUpOption, setpopUpOption] = useState(false)
- const [search, setsearch] = useState(false)
- const OpenSearch = () => {
-  console.log('button clicked');
-  // setsearch(true)
- }
+ 
  
  const popUPOpen = () => {
   setpopUpOption(true)
@@ -48,7 +44,6 @@ const App = () => {
       
      <Nava popUPOpen={popUPOpen}/>
     {popUpOption &&  <Links closePopup={closePopup}/>}
-    {search && <Prompt  OpenSearch={OpenSearch}/>}
       </div>
      </Router>
     

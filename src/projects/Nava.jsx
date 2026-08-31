@@ -16,7 +16,7 @@ const Nava = ({popUPOpen,  OpenSearch}) => {
             <div className="nav-btn"><Link to="/Tours">Reserve</Link></div>
 
             <div className="nav-buttons">
-              <div className="nav-search"><Link to="#"><button onClick={()=>OpenSearch()}><img src={search} alt="search" /></button></Link></div>
+              <div className="nav-search"><Link to="#"><button><img src={search} alt="search" /></button></Link></div>
             <div className="nav-links"><Link to="#"><button onClick={()=>popUPOpen()}><img src={bar} alt="bar" /></button></Link></div>
             </div>
             </div>
