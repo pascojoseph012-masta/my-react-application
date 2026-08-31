@@ -45,7 +45,11 @@ const Tour = () => {
         <h1>Tours</h1>
         <div className="second-landing">
           <div className="details-tour">
-            <div className="filter-card">
+            <motion.div 
+            initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring", }}
+            className="filter-card">
               <div className="this">Sort By :</div>
               <div className="this">
                 <select name="d" id="">
@@ -59,10 +63,15 @@ const Tour = () => {
 
               </div>
               
-            </div>
+            </motion.div>
           {/* division of filter results */}
 
-            <div className="filter-results">
+            <motion.div
+            initial={{scale: 0.7, opacity: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{ duration: 1.10, type: "spring", }}
+            
+            className="filter-results">
               <div className="card-holder-tour">
                {TourContent.map((TourContent)=>{
                 return <div>
@@ -85,7 +94,7 @@ const Tour = () => {
               </div>
 
             
-            </div>
+            </motion.div>
               
               <div className="next-btns">
                 <button type="button">1</button>
@@ -103,11 +112,31 @@ const Tour = () => {
                <div className="top-title"><h2>FIND YOUR TOUR</h2></div>
                <div className="form-section">
 
-                <div className="input-col"><img src={smsearch} alt="" /> <input type="text" name="name" placeholder="Search Tour*" /></div>
-                <div className="input-col"><img src={location} alt="" /> <input type="text" name="name" placeholder="Search Tour*" /></div>
-                <div className="input-col"><img src={smcalender} alt="" /> <input type="text" name="name" placeholder="Search Tour*" /></div>
-                <div className="input-col4"> <div className="title-lable"> <h4>Duration</h4></div> <input type="text" name="name" placeholder="Any" /> </div>
-                <div className="input-col5"> 
+                < motion.div
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }}  
+                 className="input-col"><img src={smsearch} alt="" /> <input type="text" name="name" placeholder="Search Tour*" /></motion.div>
+                <motion.div 
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                 className="input-col"><img src={location} alt="" /> <input type="text" name="name" placeholder="Search Tour*" /></motion.div>
+                <motion.div
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }}  
+                 className="input-col"><img src={smcalender} alt="" /> <input type="text" name="name" placeholder="Search Tour*" /></motion.div>
+                <motion.div 
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                 className="input-col4"> <div className="title-lable"> <h4>Duration</h4></div> <input type="text" name="name" placeholder="Any" /> </motion.div>
+                <motion.div 
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                className="input-col5"> 
                   <div className="contain">
                     <div className="title-label5">Min Price</div>
                   <input type="text" name="" placeholder="1" />
@@ -117,22 +146,50 @@ const Tour = () => {
                   <div className="title-label5">Max Price</div>
                   <input type="text" name="" placeholder="100" />
                   </div>
-                </div>
+                </motion.div>
                  
-                <div className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Cultural</label> </div>
-                <div className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Adventule</label> </div>
-                <div className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Historical</label> </div>
-                <div className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Seaside</label> </div>
-                <div className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Descovery</label> </div>
+                <motion.div
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                  className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Cultural</label> </motion.div>
+                 <motion.div
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }}  
+                 className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Adventule</label> </motion.div>
+                 <motion.div 
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                 className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Historical</label> </motion.div>
+                 <motion.div 
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                 className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Seaside</label> </motion.div>
+                 <motion.div 
+                  initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                className="input-col6"> <input type="checkbox" name="" placeholder="Cultural" /> <label for="Cultural">Descovery</label> </motion.div>
 
-                <div className="submit-btns"> <button type="button">FIND NOW</button> </div>
+                <motion.div 
+                 initial={{scale: 0.7, opacity: 0, x: 100}}
+                  whileInView={{opacity: 1, scale: 1, x: 0}}
+                  transition={{ duration: 1.10, type: "spring" }} 
+                className="submit-btns"> <button type="button">FIND NOW</button> </motion.div>
                   
                </div>
 
                </div>
 
                {/* more infomation obout form */}
-                <div className="why-holder">
+                <motion.div
+                initial={{ opacity: 0, x: 100}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{ duration: 1.10, type: "spring" }} 
+                 className="why-holder">
                   <div className="why-title"><h2>WHY BOOK WHITH US ?</h2></div>
                   <div className="list-card">
                     <ul>
@@ -142,8 +199,12 @@ const Tour = () => {
                       <li>Hand-Picked Tours & Activities </li>
                     </ul> 
                   </div>
-                </div>
-                <div className="brob-holder">
+                </motion.div>
+                <motion.div 
+                initial={{ opacity: 0, x: -100}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{ duration: 1.10, type: "spring" }} 
+                className="brob-holder">
                   <img src={mapp} alt="mapp" />
                   <div className="brob-title"><h2>GET QUESTION?</h2></div>
                   <div className="brob-description">
@@ -156,7 +217,7 @@ const Tour = () => {
 
 
 
-                </div>
+                </motion.div>
                 {/* next broblem card contuieng */}
                </div>
               

@@ -900,3 +900,692 @@ footer .footer-content .footer-card4{
 
  }
 }
+@media (min-width: 360px) and (max-width: 393px) {
+    html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+    .more-details{
+    width: 100%;
+    height: 370vh;
+    background-color: rgb(247, 250, 250);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    right: 20px;
+    
+    }
+
+.place-details{
+    width: 90%;
+    height: 150vh;
+}
+
+.place-details .top-links-colums{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 105%;
+    height: 7.5vh;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+    margin-left: 1.7em;
+    border-radius: 5px;
+    flex-shrink: 0;
+    overflow: auto;
+    
+
+}
+.place-details .top-links-colums::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+  
+
+}
+.place-details .top-links-colums .top-link:last-child{
+    border-left: 1px solid #C29D59;
+    border-radius: 2px;
+    background-color: #C29D59;
+    display: block;
+   
+
+
+    
+
+}
+.place-details .top-link{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 30%;
+    height: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.774);
+    border-left: 1px solid rgba(0, 0, 0, 0.582);
+    border-radius: 2px;
+     flex-shrink: 0;
+
+}
+
+.place-details .place-content{
+    width: 105%;
+    height: 93%;
+    margin-left: 1.9em;
+    margin-top: 30px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.39);
+    
+
+
+}
+.place-details .place-content .content-title .this-content1{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    font-size: 10px;
+
+ }
+ .place-details .place-content .content-title .this-content2 .stuck{
+    color: white;
+    width: 38%;
+    border-radius: 1em;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 4em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+ }
+ .place-details .place-content .content-title .this-content2 .radius{
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    columns: 2;
+    gap: 1px;
+    border-radius: 50%;
+    margin-left: 1pc;
+    margin-top: 1pc;
+
+
+ }
+
+ .place-details .place-content .place-info{
+    width: 95%;
+    margin-left: 9px;
+    height: 12vh;
+    background-color: #c29d59;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    
+
+
+ }
+ .place-details .place-content .place-info .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+.place-details .place-content .place-info .circle img{
+    width: 20px;
+}
+.place-details .place-content .place-info .circle{
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color:#020202b7;
+    font-size: 10px;
+}
+.place-details .place-content .banch-parg{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.3rem;
+
+}
+
+.place-details .place-content .banch-parg h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.place-details .place-content .dron-video{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+   position: relative;
+   top: 3em;
+}
+
+.place-details .place-content .dron-video .back-clip{
+    height:200%;
+    width: 100%;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.39);
+
+}
+.form-grab{
+ width: 100%;
+ height: 180vh;
+ display: flex;
+ gap: 20em;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.form-grab .form-card{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    bottom: 5.2em;
+    left: 1em;
+}
+.form-other-detail .why-card{
+    margin: 10px;
+    min-width: 250%;
+    height: 40vh;
+    background-color: rgba(221, 219, 219, 0.712);
+    box-shadow: 0px 0px 12px -5px black;
+    border-radius: 5px;
+    position: relative;
+    left: 1em;
+}
+.prob-card{
+    display: grid;
+    grid-template-areas: "stuck";
+    justify-content: center;
+    margin-top: 5em;
+    width: 96%;
+    height: 40vh;
+    background-color: #C29D59;
+    border-radius: 5px;
+    position: relative;
+    left: 1.2em;
+
+
+}
+}
+@media (min-width: 412px) and (max-width: 412px) {
+
+     html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+    .more-details{
+    width: 100%;
+    height: 370vh;
+    background-color: rgb(247, 250, 250);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    right: 20px;
+    
+    }
+
+.place-details{
+    width: 90%;
+    height: 150vh;
+}
+
+.place-details .top-links-colums{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 105%;
+    height: 7.5vh;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+    margin-left: 1.7em;
+    border-radius: 5px;
+    flex-shrink: 0;
+    overflow: auto;
+    
+
+}
+.place-details .top-links-colums::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+  
+
+}
+.place-details .top-links-colums .top-link:last-child{
+    border-left: 1px solid #C29D59;
+    border-radius: 2px;
+    background-color: #C29D59;
+    display: block;
+   
+
+
+    
+
+}
+.place-details .top-link{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 30%;
+    height: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.774);
+    border-left: 1px solid rgba(0, 0, 0, 0.582);
+    border-radius: 2px;
+     flex-shrink: 0;
+
+}
+
+.place-details .place-content{
+    width: 105%;
+    height: 93%;
+    margin-left: 1.9em;
+    margin-top: 30px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.39);
+    
+
+
+}
+.place-details .place-content .content-title .this-content1{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    font-size: 10px;
+
+ }
+ .place-details .place-content .content-title .this-content2 .stuck{
+    color: white;
+    width: 40%;
+    border-radius: 1em;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 4.5em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+ }
+ .place-details .place-content .content-title .this-content2 .radius{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    columns: 2;
+    gap: 1px;
+    border-radius: 50%;
+    margin-left: 1pc;
+    margin-top: 1pc;
+
+ }
+
+ .place-details .place-content .place-info{
+    width: 95%;
+    margin-left: 9px;
+    height: 12vh;
+    background-color: #c29d59;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    
+
+
+ }
+ .place-details .place-content .place-info .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+.place-details .place-content .place-info .circle img{
+    width: 20px;
+}
+.place-details .place-content .place-info .circle{
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color:#020202b7;
+    font-size: 10px;
+}
+.place-details .place-content .banch-parg{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.3rem;
+
+}
+
+.place-details .place-content .banch-parg h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.place-details .place-content .dron-video{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+   position: relative;
+   top: 3em;
+}
+
+.place-details .place-content .dron-video .back-clip{
+    height:200%;
+    width: 100%;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.39);
+
+}
+.form-grab{
+ width: 100%;
+ height: 180vh;
+ display: flex;
+ gap: 20em;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.form-grab .form-card{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    bottom: 5.2em;
+    left: 1em;
+}
+.form-other-detail .why-card{
+    margin: 10px;
+    min-width: 250%;
+    height: 40vh;
+    background-color: rgba(221, 219, 219, 0.712);
+    box-shadow: 0px 0px 12px -5px black;
+    border-radius: 5px;
+    position: relative;
+    left: 1em;
+    top: 5em;
+}
+.prob-card{
+    display: grid;
+    grid-template-areas: "stuck";
+    justify-content: center;
+    margin-top: 5em;
+    width: 96%;
+    height: 40vh;
+    background-color: #C29D59;
+    border-radius: 5px;
+    position: relative;
+    left: 1.2em;
+
+
+}
+
+}
+@media (min-width: 428px) and (max-width: 428px) {
+
+     html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+    .more-details{
+    width: 100%;
+    height: 370vh;
+    background-color: rgb(247, 250, 250);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    right: 20px;
+    
+    }
+
+.place-details{
+    width: 90%;
+    height: 150vh;
+}
+
+.place-details .top-links-colums{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 105%;
+    height: 7.5vh;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+    margin-left: 1.7em;
+    border-radius: 5px;
+    flex-shrink: 0;
+    overflow: auto;
+    
+
+}
+.place-details .top-links-colums::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+  
+
+}
+.place-details .top-links-colums .top-link:last-child{
+    border-left: 1px solid #C29D59;
+    border-radius: 2px;
+    background-color: #C29D59;
+    display: block;
+   
+
+
+    
+
+}
+.place-details .top-link{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 30%;
+    height: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.774);
+    border-left: 1px solid rgba(0, 0, 0, 0.582);
+    border-radius: 2px;
+     flex-shrink: 0;
+
+}
+
+.place-details .place-content{
+    width: 105%;
+    height: 93%;
+    margin-left: 1.9em;
+    margin-top: 30px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.39);
+    
+
+
+}
+.place-details .place-content .content-title .this-content1{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    font-size: 10px;
+
+ }
+ .place-details .place-content .content-title .this-content2 .stuck{
+    color: white;
+    width: 40%;
+    border-radius: 1em;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 4.5em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+ }
+ .place-details .place-content .content-title .this-content2 .radius{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    columns: 2;
+    gap: 1px;
+    border-radius: 50%;
+    margin-left: 1pc;
+    margin-top: 1pc;
+
+ }
+
+ .place-details .place-content .place-info{
+    width: 95%;
+    margin-left: 9px;
+    height: 12vh;
+    background-color: #c29d59;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    
+
+
+ }
+ .place-details .place-content .place-info .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+.place-details .place-content .place-info .circle img{
+    width: 20px;
+}
+.place-details .place-content .place-info .circle{
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color:#020202b7;
+    font-size: 10px;
+}
+.place-details .place-content .banch-parg{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.3rem;
+
+}
+
+.place-details .place-content .banch-parg h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.place-details .place-content .dron-video{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+   position: relative;
+   top: 3em;
+}
+
+.place-details .place-content .dron-video .back-clip{
+    height:200%;
+    width: 100%;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.39);
+
+}
+.form-grab{
+ width: 100%;
+ height: 180vh;
+ display: flex;
+ gap: 20em;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.form-grab .form-card{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.582);
+    bottom: 5.2em;
+    left: 1em;
+}
+.form-other-detail .why-card{
+    margin: 10px;
+    min-width: 250%;
+    height: 40vh;
+    background-color: rgba(221, 219, 219, 0.712);
+    box-shadow: 0px 0px 12px -5px black;
+    border-radius: 5px;
+    position: relative;
+    left: 1em;
+    top: 5em;
+}
+.prob-card{
+    display: grid;
+    grid-template-areas: "stuck";
+    justify-content: center;
+    margin-top: 5em;
+    width: 96%;
+    height: 40vh;
+    background-color: #C29D59;
+    border-radius: 5px;
+    position: relative;
+    left: 1.2em;
+
+
+}
+
+}
+
