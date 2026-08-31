@@ -3,7 +3,6 @@ import{BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import Nava from './projects/Nava';
 import MainContent from './projects/MainContent'
 import Links from './projects/Links'
-import Prompt from './projects/prompt'
 import MainTour from "./projects/MainTour"
 import { TourContent } from "./assets/Tour"
 import TourDetails from "./projects/pages/TourDetails";
