@@ -70,13 +70,15 @@
 .second-landing .details-tour .filter-card .this{
     width: 15em;
     height: 4em;
-    border: 1px solid black;
+    border: none;
+    border-left: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
 
 }
+
 
 .second-landing .details-tour .filter-card .this select{
 
@@ -303,7 +305,7 @@
 
 }
 .second-landing .left-details .left-side-holder .form-grab-holder .form-section .input-col{
-    width: 90%git ;
+    width: 90%;
     height: 7vh;
     border: 1px solid black;
     margin: 1em;

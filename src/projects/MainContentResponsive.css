@@ -29650,6 +29650,8 @@ footer .footer-content .footer-card3 .colum h2{
 }
 @media (min-width: 1909px) and (max-width: 1909px) {
 
+    
+
         .mySlide{
     width: 99.9%;
     height: 100vh;
@@ -29764,6 +29766,7 @@ footer .footer-content .footer-card3 .colum h2{
 }
 .main-inputs{
     position: relative;
+    left: 1em;
     bottom: 2em;
     margin: 15px;
     width: 80%;
@@ -29878,8 +29881,8 @@ footer .footer-content .footer-card3 .colum h2{
 }
 .card1{
     grid-area: stuck;
-    width: 28em;
-    height: 30em;
+    min-width: 40em;
+    min-height: 35em;
     border: 3px solid #C29D59;
     display: flex;
     justify-self: center;
@@ -29888,8 +29891,8 @@ footer .footer-content .footer-card3 .colum h2{
     justify-content: center;
 }
 .card1 img{
-    width: 26.9em;
-    height: 28.9em;
+    width: 38.9em;
+    height: 33.9em;
     object-fit: cover;
     display: flex;
     justify-self: center;
@@ -29900,19 +29903,18 @@ footer .footer-content .footer-card3 .colum h2{
     border: 3px solid #C29D59;
     background-color: white;
     grid-area: stuck;
-    width: 14em;
-    height: 11em;
+    min-width: 20em;
+    min-height: 17em;
     display: flex;
     justify-self: right;
-    align-items: end;
     justify-content: center;
     position: relative;
     top: 23em;
-    left: 2em;
+    left: 3em;
 }
 .card2 img{
-    width: 13.3em;
-    height: 10.5em; 
+    min-width: 19em;
+    min-height: 15.5em; 
     object-fit: cover;
     display: flex;
     justify-self: center;
@@ -30094,8 +30096,8 @@ footer .footer-content .footer-card3 .colum h2{
 
 }
 .raid-grid-card .box .card-image1 img{
-    height: 100%;
-    min-width: 55em;
+    height: 120%;
+    min-width: 68em;
     object-fit: cover;
     grid-area: stuck;
 }
@@ -30131,7 +30133,7 @@ footer .footer-content .footer-card3 .colum h2{
 }
 .raid-grid-card .box .card-image2 img{
     min-height: 100%;
-    min-width: 26em;
+    min-width: 35em;
     object-fit: cover;
 }
 .raid-grid-card .box img:hover{
@@ -30169,7 +30171,7 @@ footer .footer-content .footer-card3 .colum h2{
 
 .raid-grid-card .box .card-imge4 img{
     height: 100%;
-    width: 27em;
+    width: 35em;
     object-fit: cover;
 }
 
@@ -30203,18 +30205,12 @@ footer .footer-content .footer-card3 .colum h2{
 
 .raid-grid-card .box .grid-image3 img{
     height: 100%;
-    min-width: 27em;
+    min-width: 35em;
     object-fit: cover;
     
 }
-@media (max-width: 826px) {
-.raid-grid-card .box .grid-image3 img{
-    height: 100%;
-    max-width: 44.5em;
-    object-fit: cover;
-    
-}
-}
+
+
 
 .raid-grid-card .box .grid-image3 button{
     grid-area: stuck;
@@ -30250,8 +30246,8 @@ footer .footer-content .footer-card3 .colum h2{
     grid-template-areas:
     "box1 box1 box2"
     "box3 box4 box2"; 
-    column-gap: 16em;
-    row-gap: 11em;
+    column-gap: 23em;
+    row-gap: 15em;
     width: 100%;
     height: 90vh;
     align-content: start;
@@ -30309,7 +30305,7 @@ footer .footer-content .footer-card3 .colum h2{
 }
 .downword{
     width: 100%;
-    height: 46vh;
+    max-height: 38vh;
     border-left: 3px solid #C29D59;
     box-shadow: 0px 0px 8px 0px black;
 
@@ -30411,7 +30407,7 @@ footer .footer-content .footer-card3 .colum h2{
     font-size: larger;
 }
 .last-section{
-    margin: 40px auto;
+    margin: 10em auto;
     width: 98%;
     height: 70vh;
     display: flex;
