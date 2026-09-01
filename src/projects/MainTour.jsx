@@ -14,7 +14,7 @@ const MainTour = () => {
   return (
     <div className="whole-tour"
 
-    onMouseEnter={() => setisHovered()}
+    onMouseEnter={() => setisHovered(true)}
     onMouseLeave={() => setisHovered(false)}
     
     >
@@ -27,7 +27,7 @@ const MainTour = () => {
 
   transition={{
     x : {
-      duration: "15",
+      duration: "17",
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop"
