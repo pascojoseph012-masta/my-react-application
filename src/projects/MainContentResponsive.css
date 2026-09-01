@@ -23596,7 +23596,7 @@ footer .footer-content .footer-card1 .title1{
 
 }
 footer .footer-content .footer-card1 img{
-    m-width: 10em;
+    min-width: 10em;
     max-height: 5.6vh;
     grid-area: stuck;
     opacity: 100;
